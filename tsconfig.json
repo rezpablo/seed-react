@@ -1,0 +1,18 @@
+{
+  "version": "2.7.2",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": false,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

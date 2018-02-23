@@ -1,0 +1,5 @@
+{
+  "appId": "DB",
+  "masterKey": "db",
+  "databaseURI": "mongodb://db:db@172.17.0.1/db"
+}
