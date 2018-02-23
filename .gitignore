@@ -7,3 +7,4 @@ tmp/
 dist/
 .sw[a-z]
 package-lock.json
+docker/mongodb/mongoData

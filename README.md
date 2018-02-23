@@ -1,6 +1,5 @@
 
 ---
-
 - React
 - Redux
 - Typescript
@@ -8,7 +7,9 @@
 - Router
 - Axios
 - ParseServer
+- Forms https://github.com/final-form/react-final-form
 
 ### TODO
-- Forms
 - UI
+- Axios Sample
+- ParseServer Sample 

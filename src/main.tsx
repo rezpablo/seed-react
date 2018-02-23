@@ -5,7 +5,6 @@ import App from './App';
 import {Router} from 'react-router';
 import history from './main/config/history';
 
-import './index.css';
 import 'font-awesome/css/font-awesome.css';
 
 import {PersistGate} from 'redux-persist/integration/react'
