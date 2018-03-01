@@ -1,14 +1,13 @@
 import thunk from 'redux-thunk';
 import multi from 'redux-multi';
 import promise from 'redux-promise';
-import { applyMiddleware, createStore } from 'redux';
-import { persistReducer, persistStore } from 'redux-persist';
-// import storage from 'redux-persist/lib/storage';
+import {applyMiddleware, createStore} from 'redux';
+import {persistReducer, persistStore} from 'redux-persist';
 import rootReducer from '../reducer';
 import * as localForage from 'localforage';
+import logger from 'redux-logger';
 
-
-let middleware = [thunk, multi, promise];
+let middleware = [thunk, multi, promise, logger];
 let enhancers = [applyMiddleware(...middleware)];
 
 const persistConfig = {
@@ -21,5 +20,5 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 export default () => {
     let store = createStore(persistedReducer, enhancers);
     let persistor = persistStore(store);
-    return { store, persistor }
-}
+    return { store, persistor };
+};
